@@ -11,7 +11,7 @@ public class Calculator {
 		System.out.printf("%d - %d = %d \n", num1, num2, num1 - num2);
 	}
 	
-	static void multipication(int num1, int num2) {
+	static void multiplication(int num1, int num2) {
 		System.out.printf("%d * %d = %d \n", num1, num2, num1 * num2);
 	}
 	
@@ -19,8 +19,12 @@ public class Calculator {
 		System.out.printf("%d / %d = %d \n", num1, num2, num1 / num2);
 	}
 	
+	static void square(int num1) {
+		System.out.printf("The square root of %d is: %d.", num1, num1 * num1);
+	}
+	
 	public static void main(String [] args) {
-		System.out.println("This should work");
+//		System.out.println("This should work");
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -32,8 +36,9 @@ public class Calculator {
 		
 		add(num1, num2);
 		subtraction(num1, num2);
-		multipication(num1, num2);
+		multiplication(num1, num2);
 		division(num1, num2);
+		square(num1);
 		
 	}
 
